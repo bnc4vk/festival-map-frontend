@@ -54,6 +54,16 @@ header {
   padding: 3px 20px 3px 8px;
 }
 
+.map-ui-date-range__field {
+  color: #1f2937;
+}
+
+.map-ui-date-range__input {
+  background-color: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
 .map-warning {
   margin: 0 24px 16px;
   color: #8a4b00;
@@ -91,6 +101,16 @@ header {
 
   .tile.search-tile {
     border-color: #3a3a3a;
+  }
+
+  .map-ui-date-range__field {
+    color: #e5e7eb;
+  }
+
+  .map-ui-date-range__input {
+    background-color: #1f1f1f;
+    color: #f9fafb;
+    border-color: #4b5563;
   }
 
   .map-warning {
