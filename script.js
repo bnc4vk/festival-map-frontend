@@ -54,6 +54,14 @@ if (!accessToken) {
 
   document.querySelector("#search-tile")?.appendChild(searchTile.root);
 
+  const handleDocumentClick = (event) => {
+    if (!searchTile.root.contains(event.target)) {
+      searchController.setExpanded(false);
+    }
+  };
+
+  document.addEventListener("click", handleDocumentClick);
+
   const dateRange = createDateRange({
     startLabel: "Start date",
     endLabel: "End date",
@@ -76,5 +84,6 @@ if (!accessToken) {
 
   map.on("remove", () => {
     searchController.destroy();
+    document.removeEventListener("click", handleDocumentClick);
   });
 }

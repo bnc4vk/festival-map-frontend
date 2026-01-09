@@ -23,6 +23,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 16px;
   padding: 16px 24px 0;
 }
@@ -39,7 +40,60 @@ header {
   border: 1px solid #d1d5db;
 }
 
+.tile.date-range-tile {
+  padding: 6px 14px;
+  width: 320px;
+}
+
+.date-range-input {
+  font-size: 13px;
+}
+
+.date-range-submit {
+  font-size: 0.85rem;
+  padding: 3px 20px 3px 8px;
+}
+
 .map-warning {
   margin: 0 24px 16px;
   color: #8a4b00;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --map-ui-wrapper-bg: #121212;
+    --map-ui-map-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --map-ui-legend-bg: rgba(20, 20, 20, 0.9);
+    --map-ui-legend-item-bg: rgba(40, 40, 40, 0.8);
+    --map-ui-legend-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    --map-ui-legend-text: #e6e6e6;
+    --map-ui-search-bg: rgba(30, 30, 30, 0.9);
+    --map-ui-search-bg-hover: rgba(40, 40, 40, 0.95);
+    --map-ui-search-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --map-ui-search-shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.6);
+    --map-ui-search-input: #f0f0f0;
+    --map-ui-search-placeholder: #9aa3ad;
+    --map-ui-search-submit: #7db2ff;
+    --map-ui-search-submit-hover: #5e97e6;
+    --map-ui-search-icon-stroke: #b0b0b0;
+    --map-ui-spinner-track: rgba(255, 255, 255, 0.2);
+    --map-ui-spinner-head: #f0f0f0;
+  }
+
+  body {
+    background-color: #0f0f0f;
+    color: #e6e6e6;
+  }
+
+  .section-divider {
+    border-top-color: #2a2a2a;
+  }
+
+  .tile.search-tile {
+    border-color: #3a3a3a;
+  }
+
+  .map-warning {
+    color: #f0b35f;
+  }
 }
