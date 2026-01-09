@@ -1,8 +1,5 @@
 import { createLevelAwareMap } from "map-ui-common/map-core";
 import { createDateRange } from "map-ui-common/ui/date-range";
-import "map-ui-common/ui/date-range.css";
-import "map-ui-common/ui/shared-map-ui.css";
-import "./styles.css";
 
 import { createFestivalDataAdapter } from "./data-adapter.js";
 import { createFestivalState } from "./state.js";
