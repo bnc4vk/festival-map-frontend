@@ -9,12 +9,16 @@
       href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css"
     />
     <link rel="stylesheet" href="node_modules/map-ui-common/src/ui/shared-map-ui.css" />
+    <link rel="stylesheet" href="node_modules/map-ui-common/src/ui/date-range.css" />
     <link rel="stylesheet" href="style.css" />
     <script type="importmap">
       {
         "imports": {
           "map-ui-common/map-core": "./node_modules/map-ui-common/src/map-core/map-core.js",
-          "map-ui-common/map-core/config": "./node_modules/map-ui-common/src/map-core/config.js"
+          "map-ui-common/map-core/config": "./node_modules/map-ui-common/src/map-core/config.js",
+          "map-ui-common/ui/search-tile": "./node_modules/map-ui-common/src/ui/search-tile.js",
+          "map-ui-common/ui/date-range": "./node_modules/map-ui-common/src/ui/date-range.js",
+          "map-ui-common/ui/map-legend": "./node_modules/map-ui-common/src/ui/map-legend.js"
         }
       }
     </script>
@@ -24,11 +28,16 @@
       <h1>Festival Map</h1>
     </header>
     <main>
+      <div class="map-tiles" aria-label="Map filters and search">
+        <div id="search-tile"></div>
+        <div id="date-range-tile"></div>
+      </div>
       <div class="map-wrapper">
         <div class="map-aspect">
           <div id="map" aria-label="Festival map"></div>
         </div>
       </div>
+      <div id="legend"></div>
     </main>
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
     <script type="module" src="script.js"></script>

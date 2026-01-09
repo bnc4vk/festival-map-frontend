@@ -12,6 +12,14 @@ header {
   padding: 16px 24px 0;
 }
 
+.map-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 24px 0;
+}
+
 .map-wrapper {
   padding: 24px;
 }
