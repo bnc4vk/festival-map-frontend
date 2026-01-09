@@ -10,6 +10,13 @@ body {
 
 header {
   padding: 16px 24px 0;
+  text-align: center;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid #d9d9d9;
+  margin: 16px 24px 0;
 }
 
 .map-tiles {
@@ -26,6 +33,10 @@ header {
 
 #map {
   min-height: 420px;
+}
+
+.tile.search-tile {
+  border: 1px solid #d1d5db;
 }
 
 .map-warning {
