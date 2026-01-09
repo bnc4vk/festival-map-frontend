@@ -1,0 +1,26 @@
+:root {
+  --map-ui-wrapper-bg: #f5f5f5;
+  --map-ui-map-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+header {
+  padding: 16px 24px 0;
+}
+
+.map-wrapper {
+  padding: 24px;
+}
+
+#map {
+  min-height: 420px;
+}
+
+.map-warning {
+  margin: 0 24px 16px;
+  color: #8a4b00;
+}
