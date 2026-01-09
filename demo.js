@@ -1,11 +1,11 @@
 import { createFestivalMap } from "./src/index.js";
 
-const ACCESS_TOKEN =
-  window.MAPBOX_ACCESS_TOKEN || "YOUR_MAPBOX_ACCESS_TOKEN";
+const isLocalhost = window.location.hostname === "localhost";
 
-if (window.mapboxgl) {
-  window.mapboxgl.accessToken = ACCESS_TOKEN;
-}
+mapboxgl.accessToken = isLocalhost
+  ? "pk.eyJ1IjoiYm5jNHZrIiwiYSI6ImNtZmtuNzExZTBma2YyaXB5N2V3cnNqZHYifQ.81pi_QteF8dXpaLdAgAcbA"
+  : "pk.eyJ1IjoiYm5jNHZrIiwiYSI6ImNtZmttd2l0NDBlcmgybXB6engyZ3NsOXMifQ.ispasH40DZiTItGPC7EuQQ";
+
 
 const sampleFeatureIds = {
   country: ["US", "CA", "MX", "BR", "FR", "DE", "IN", "JP", "AU"],
