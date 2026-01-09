@@ -1,4 +1,4 @@
-import { createFestivalMap } from "../src/index.js";
+import { createFestivalMap } from "./src/index.js";
 
 const ACCESS_TOKEN =
   window.MAPBOX_ACCESS_TOKEN || "YOUR_MAPBOX_ACCESS_TOKEN";

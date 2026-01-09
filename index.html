@@ -3,30 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festival Map UI</title>
-    <style>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        margin: 3rem;
-        color: #0f172a;
+    <title>Festival Map UI Demo</title>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/map-ui-common/src/ui/date-range.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/map-ui-common/src/ui/shared-map-ui.css"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "map-ui-common/map-core": "/node_modules/map-ui-common/src/map-core/map-core.js",
+          "map-ui-common/ui/date-range": "/node_modules/map-ui-common/src/ui/date-range.js"
+        }
       }
-      a {
-        color: #2563eb;
-      }
-      .panel {
-        max-width: 600px;
-      }
-    </style>
+    </script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   </head>
   <body>
-    <main class="panel">
-      <h1>Festival Map UI</h1>
-      <p>
-        This repository contains a demo for the Festival Map UI package.
-      </p>
-      <p>
-        Open the demo at <a href="/examples/">/examples/</a>.
-      </p>
-    </main>
+    <div class="festival-map-layout">
+      <aside class="festival-map-sidebar">
+        <div class="festival-map-panel">
+          <div id="festival-date-range"></div>
+        </div>
+        <div class="festival-map-panel">
+          <div id="festival-legend"></div>
+        </div>
+        <div class="festival-map-panel">
+          <div id="festival-loading"></div>
+        </div>
+      </aside>
+      <div class="festival-map-container">
+        <div id="festival-map" class="festival-map"></div>
+      </div>
+    </div>
+    <script type="module" src="./demo.js"></script>
   </body>
 </html>

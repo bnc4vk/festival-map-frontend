@@ -21,7 +21,7 @@ npm run dev
 
 Then open the URL printed by Vite. Provide your Mapbox token by setting
 `MAPBOX_ACCESS_TOKEN` in the browser console or by inlining it in
-`examples/demo.js`.
+`demo.js`.
 
 ## Run the static demo with `python3 -m http.server`
 
@@ -32,7 +32,7 @@ Then open the URL printed by Vite. Provide your Mapbox token by setting
 python3 -m http.server 8000
 ```
 
-3. Open http://localhost:8000 and click through to the demo.
+3. Open http://localhost:8000 to see the demo.
 
 > Note: The static demo uses an import map that points at files inside
 > `node_modules/map-ui-common`, so the dependencies must be installed.
