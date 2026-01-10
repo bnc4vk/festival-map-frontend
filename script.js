@@ -39,7 +39,7 @@ if (!accessToken) {
             type: "line",
             "source-layer": "admin",
             filter: ["==", ["get", "admin_level"], 0],
-            paint: { "line-color": "#636e72", "line-width": 1 },
+            paint: { "line-color": "#636e72", "line-width": 0.5 },
           },
           overlayLayer: {
             id: "countries-borders-overlay",
@@ -48,7 +48,7 @@ if (!accessToken) {
             filter: ["==", ["get", "admin_level"], 0],
             paint: {
               "line-color": "#2d3436",
-              "line-width": 1.4,
+              "line-width": 0.7,
               "line-opacity": 0.5,
             },
           },
@@ -71,7 +71,7 @@ if (!accessToken) {
             type: "line",
             "source-layer": "admin",
             filter: ["==", ["get", "admin_level"], 1],
-            paint: { "line-color": "#2d3436", "line-width": 0.8 },
+            paint: { "line-color": "#2d3436", "line-width": 0.4 },
           },
           overlayLayer: {
             id: "states-borders-overlay",
@@ -80,7 +80,7 @@ if (!accessToken) {
             filter: ["==", ["get", "admin_level"], 1],
             paint: {
               "line-color": "#2d3436",
-              "line-width": 1.1,
+              "line-width": 0.55,
               "line-opacity": 0.5,
             },
           },
@@ -103,7 +103,7 @@ if (!accessToken) {
             type: "line",
             "source-layer": "admin",
             filter: ["==", ["get", "admin_level"], 2],
-            paint: { "line-color": "#0984e3", "line-width": 0.6 },
+            paint: { "line-color": "#0984e3", "line-width": 0.3 },
           },
           overlayLayer: {
             id: "cities-borders-overlay",
@@ -112,7 +112,7 @@ if (!accessToken) {
             filter: ["==", ["get", "admin_level"], 2],
             paint: {
               "line-color": "#0984e3",
-              "line-width": 0.9,
+              "line-width": 0.45,
               "line-opacity": 0.5,
             },
           },
